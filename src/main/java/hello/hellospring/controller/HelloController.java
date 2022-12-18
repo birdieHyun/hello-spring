@@ -10,7 +10,6 @@ public class HelloController {
     @GetMapping("hello") // 웹에서 헬로우를 클릭하면 이 메서드를 호출해준다.
     public String hello(Model model){
         model.addAttribute("data", "hello!!");
-        return "hello";
-
+        return "hello"; // templates 의 에서 hello 를 찾는다 -> hello.html 찾는다.
     }
 }
